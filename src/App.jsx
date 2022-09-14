@@ -4,7 +4,7 @@ import RequireAuth from "./components/RequireAuth/RequireAuth"
 import Footer from "./components/Footer/Footer"
 import Header from "./components/Header/Header"
 import Home from "./pages/Home/Home"
-import Register from "./pages/Register/Register"
+import Form from "./components/RegisterComp/Form/RegisterComp"
 import Login from "./pages/Login/Login"
 import Profile from "./pages/Profile/Profile"
 
@@ -25,7 +25,7 @@ const App =() => {
           <Routes>
 
           <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/register" element={<Form />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={ <RequireAuth> <Profile /> </RequireAuth>} />
                 
