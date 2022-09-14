@@ -39,6 +39,12 @@ return (
      <Link to="/"> <button>Logout</button> </Link>
     </li>
 
+    <li>
+      <Link to="/travels"> 
+          <button> Viajes </button> 
+       </Link>
+    </li>
+
   </ul>
 </header>
   )

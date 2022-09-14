@@ -7,6 +7,8 @@ import Home from "./pages/Home/Home"
 import Form from "./components/RegisterComp/Form/RegisterComp"
 import Login from "./pages/Login/Login"
 import Profile from "./pages/Profile/Profile"
+import Travels from "./pages/Travels/Travels"
+import TravelDetail from "./pages/TravelDetail/TravelDetail"
 
 
 
@@ -28,8 +30,8 @@ const App =() => {
           <Route path="/register" element={<Form />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={ <RequireAuth> <Profile /> </RequireAuth>} />
-                
-                  
+          <Route path="/travels" element={<Travels />}  />
+          <Route path="/travels/:id" element={<TravelDetail />}   />   
                
               
             

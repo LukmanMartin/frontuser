@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { API } from '../../../services/API';
 import OtherInfo from '../OtherInfo/Otherinfo';
 import PersonalInfo from '../Personalinfo/PersonalInfo';
@@ -39,7 +39,7 @@ console.log(user)
       {step === 1 && (<button type="button" onClick={nextStep}>Next</button>)}
       {step !== 1 && (<button type="button" onClick={prevStep}>Back</button>)}
       {step === 2 && (<button type="button" onClick={nextStep}>Next</button>)}
-      {step === 3 && (<button type="button" onClick={sendInfo}>Send</button>)}
+      {step === 3 && ( <Link to="/login"><button type="button" onClick={sendInfo}>Send</button></Link>)}
 
 
     </>
