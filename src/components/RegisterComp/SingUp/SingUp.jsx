@@ -10,13 +10,8 @@ const SingUp = ({ saveUser, user }) => {
   return (
     <div>
 
-                <label htmlFor="rol">Rol</label>
-                    <select    onChange={handleInput} value={user.guest? user.guest: ''}  >
-                        <option value="guest">Usuario</option>
-
-                      
-
-                    </select>
+                <label htmlFor="rol">usario:</label>
+                <input type="text" id="rol" name="rol" placeholder="usario"  onChange={handleInput} value="guest"  />
 
 
                 <label htmlFor="fullname">Nombre completo:</label>
