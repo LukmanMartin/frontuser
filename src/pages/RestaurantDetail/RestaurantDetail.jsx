@@ -10,7 +10,7 @@ const RestaurantDetail = () => {
     const [ restaurant, setRestaurant] = useState([]);
 
     const getRestaurant= async() => {
-        API.get(`/restaurant/${id}`).then(( res )=> {
+        API.get(`/restaurants/${id}`).then(( res )=> {
             setRestaurant( res.data.data.restaurant)
             console.log(res.data.data.restaurant)
         })

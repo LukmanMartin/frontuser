@@ -58,6 +58,11 @@ return (
        </Link>
     </li>
 
+    <li>
+      <Link to="/pdis"> 
+          <button> Puntos de Interés </button> 
+       </Link>
+    </li>
 
   </ul>
 </header>

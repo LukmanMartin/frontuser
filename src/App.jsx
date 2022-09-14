@@ -12,7 +12,9 @@ import TravelDetail from "./pages/TravelDetail/TravelDetail"
 import HotelDetail from "./pages/HotelDetail/HotelDetal"
 import Hoteles from "./pages/Hoteles/Hoteles"
 import Restaurants from "./pages/Restaurants/Rerstaurants"
-import RestaurantsDetail from "./pages/RestaurantDetail/RestaurantDetail"
+import RestaurantDetail from "./pages/RestaurantDetail/RestaurantDetail"
+import Pdis from "./pages/Pdis/Pdis"
+import PdiDetail from "./pages/PdiDetail/PdiDetail"
 
 
 
@@ -38,8 +40,9 @@ const App =() => {
           <Route path="/hoteles" element={<Hoteles />}  />
           <Route path="/hoteles/:id" element={<HotelDetail />}   />   
           <Route path="/restaurants" element={<Restaurants />}  />
-          <Route path="/restaurants/:id" element={<RestaurantsDetail />}   />   
-              
+          <Route path="/restaurants/:id" element={<RestaurantDetail />}   />   
+          <Route path="/pdis" element={<Pdis />} />
+          <Route path="/pdis/:id" element={<PdiDetail />}   />
             
           
 

@@ -9,8 +9,8 @@ const Restaurants = () => {
    
     
       const getAllRestaurants = async () => {
-        API.get("/restaurants").then((res) => {
-          setAllRestaurants(res.data.data.restaurant);
+        API.get("/restaurants").then((res) => {          
+          setAllRestaurants(res.data.data.restaurant);         
     
           console.log(allRestaurants)
         });
