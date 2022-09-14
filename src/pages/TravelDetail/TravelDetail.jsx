@@ -10,8 +10,9 @@ const TravelDetail = () => {
     const [ travel, setTravel ] = useState([]);
 
     const getTravel = async() => {
-        API.get(`/travel/${id}`).then( res => {
-            setTravel( res.data.travel)
+        API.get(`/travel/${id}`).then(( res )=> {
+            setTravel( res.data.data.travel)
+            console.log(res.data.data.travel)
         })
     }
 

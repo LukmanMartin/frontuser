@@ -21,10 +21,12 @@ const UserForm = () => {
     setUser({ ...user, ...value })
   }
 
-  const sendInfo = () => {
+  const sendInfo = async () => {
+    console.log("Usuario Def", user)
     API.post(`/user/register`,user).then ((res) => {
+     
        if (res) {
-        Navigate("/login");
+        // Navigate("/login");
        }
     })
 }

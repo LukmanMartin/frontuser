@@ -40,10 +40,24 @@ return (
     </li>
 
     <li>
-      <Link to="/travels"> 
+      <Link to="/travel"> 
           <button> Viajes </button> 
        </Link>
     </li>
+
+    <li>
+      <Link to="/hoteles"> 
+          <button> Hoteles </button> 
+       </Link>
+    </li>
+
+    
+    <li>
+      <Link to="/restaurants"> 
+          <button> Restaurantes </button> 
+       </Link>
+    </li>
+
 
   </ul>
 </header>

@@ -17,7 +17,7 @@ const Travels = () => {
        
       useEffect(() => {
         getAllTravels();
-      }, );
+      }, [] );
     
     
       return (

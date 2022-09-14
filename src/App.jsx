@@ -9,7 +9,10 @@ import Login from "./pages/Login/Login"
 import Profile from "./pages/Profile/Profile"
 import Travels from "./pages/Travels/Travels"
 import TravelDetail from "./pages/TravelDetail/TravelDetail"
-
+import HotelDetail from "./pages/HotelDetail/HotelDetal"
+import Hoteles from "./pages/Hoteles/Hoteles"
+import Restaurants from "./pages/Restaurants/Rerstaurants"
+import RestaurantsDetail from "./pages/RestaurantDetail/RestaurantDetail"
 
 
 
@@ -30,9 +33,12 @@ const App =() => {
           <Route path="/register" element={<Form />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={ <RequireAuth> <Profile /> </RequireAuth>} />
-          <Route path="/travels" element={<Travels />}  />
-          <Route path="/travels/:id" element={<TravelDetail />}   />   
-               
+          <Route path="/travel" element={<Travels />}  />
+          <Route path="/travel/:id" element={<TravelDetail />}   />   
+          <Route path="/hoteles" element={<Hoteles />}  />
+          <Route path="/hoteles/:id" element={<HotelDetail />}   />   
+          <Route path="/restaurants" element={<Restaurants />}  />
+          <Route path="/restaurants/:id" element={<RestaurantsDetail />}   />   
               
             
           
